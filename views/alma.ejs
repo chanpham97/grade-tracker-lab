@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Grades</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/script.js" defer></script>
+</head>
+<body>
+  <h1>Totally Alma</h1>
+
+  <div class="card-container">
+    <% for(let i = 0; i < students.length; i++){ %>
+      <div class="card">
+        <img src="<%= students[i].image %>" alt="Profile Picture">
+        <h2><%= students[i].name %></h2>
+        <p>Grade: <%= students[i].grade %></p>
+
+        <div class="button-wrapper">
+            <!-- Task 5: Add a form to update the student's grade -->
+            <!-- Make sure the new grade is a number from 0 to 100 -->
+            <!-- Go to script.js to complete Task 6 -->
+
+
+            <!-- Task 2: Add a button to delete the entire student by ID -->
+            <!-- Go to script.js to complete Task 3 -->
+
+        </div>
+
+      </div>
+    <% } %>
+  </div>
+
+</body>
+</html>
